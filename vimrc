@@ -37,7 +37,9 @@ inoremap <C-Z> <C-O>:update<CR>
 " Quick quit command
 noremap <Leader>e :quit<CR>  " Quit current window
 noremap <Leader>E :qa!<CR>   " Quit all windows
+nmap <Leader>l :set list!<CR> " Toggle whitespace display
 
+set listchars=tab:▸\ ,eol:¬,trail:~,extends:>,precedes:<
 
 " bind Ctrl+<movement> keys to move around the windows, instead of using Ctrl+w + <movement>
 " Every unnecessary keystroke that can be saved is good for your health :)
