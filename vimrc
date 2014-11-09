@@ -115,7 +115,8 @@ set noswapfile
 " git clone https://github.com/Lokaltog/powerline.git
 " cd powerline
 " sudo python setup.py install
-set rtp+=$HOME/.local/lib/python3.4/site-packages/powerline/bindings/vim/
+" pip3 install --user git+git://github.com/Lokaltog/powerline
+set rtp+=$HOME/.local/lib/python/site-packages/powerline/bindings/vim/
 
 " Always show statusline
 set laststatus=2
