@@ -124,9 +124,11 @@ set laststatus=2
 " Use 256 colours (Use this setting only if your terminal supports 256 colours)
 set t_Co=256
 
-" syntax enable
-" set background=light
-" colorscheme solarized
+if has('gui_running')
+    syntax enable
+    set background=dark
+    colorscheme solarized
+endif
 
 " Settings for ctrlp
 " cd ~/.vim/bundle
