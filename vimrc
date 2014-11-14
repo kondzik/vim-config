@@ -19,6 +19,7 @@ set mouse=a " enable mouse
 " Rebind <Leader> key
 let mapleader = ","
 
+set hidden
 
 " Bind nohl
 " Removes highlight of your last search
@@ -178,7 +179,7 @@ set nofoldenable
 " NERDTree
 " cd ~/.vim/bundle
 " git clone https://github.com/scrooloose/nerdtree.git
-nmap <leader>t :NERDTree<CR>
+nmap <leader>t :NERDTreeToggle<CR>
 
 " Display hidden files
 let NERDTreeShowHidden=1
