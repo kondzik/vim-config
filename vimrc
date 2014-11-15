@@ -10,10 +10,11 @@ set encoding=utf-8
 set pastetoggle=<F2>
 set clipboard=unnamed
 
-
 " Mouse and backspace
 set bs=2     " make backspace behave like normal again
-set mouse=a " enable mouse
+if has('gui_running')
+    set mouse=a " enable mouse
+endif
 
 
 " Rebind <Leader> key
@@ -74,7 +75,7 @@ syntax on
 " Showing line numbers and length
 set number  " show line numbers
 set tw=79   " width of document (used by gd)
-set nowrap  " don't automatically wrap on load
+" set nowrap  " don't automatically wrap on load
 set fo-=t   " don't automatically wrap text when typing
 set colorcolumn=80
 highlight ColorColumn ctermbg=233
